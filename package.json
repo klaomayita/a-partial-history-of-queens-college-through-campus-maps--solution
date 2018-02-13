@@ -1,0 +1,42 @@
+{
+  "name": "gulp-template-for-html-css-sass-js",
+  "version": "1.0.0",
+  "description": "An automation template for HTML, CSS, Sass, and JavaScript.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-warrior/gulp-template-for-html-css-sass-js.git"
+  },
+  "keywords": [
+    "gulp",
+    "automation",
+    "template",
+    "html",
+    "css",
+    "sass",
+    "javascript"
+  ],
+  "author": "Roy Vanegas",
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Roy Vanegas",
+      "email": "roy@thecodeeducators.com",
+      "url": "http://roy.vanegas.org"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/code-warrior/gulp-template-for-html-css-sass-js/issues"
+  },
+  "homepage": "https://github.com/code-warrior/gulp-template-for-html-css-sass-js#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-html": "^0.4.4",
+    "gulp-sass": "^2.1.1"
+  }
+}

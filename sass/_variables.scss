@@ -1,0 +1,99 @@
+// =================================================================================
+// Base font sizing and leading
+// =================================================================================
+$font-size--base: 16px;
+$leading:         16px;
+
+// =================================================================================
+// Grid-specific variables
+// =================================================================================
+$width--grid-column: 60px;                                              // 60px
+$width--grid-gutter: ($width--grid-column / 3);                         // 20px
+$width--grid-unit:   ($width--grid-column + $width--grid-gutter);       // 80px
+
+// =================================================================================
+// Font stacks
+// =================================================================================
+$font-stack--main-: 'IBM Plex Sans', Helvetica, sans-serif;
+
+// =================================================================================
+// Font weights
+// =================================================================================
+$extra-light: 200;
+$light:       300;
+$regular:     400;
+$bold:        700;
+
+// =================================================================================
+// Image dimensions
+// =================================================================================
+$width--map-image:  700px;
+
+// =================================================================================
+// Colors
+// =================================================================================
+$color--1940:    rgb(245, 163, 176);
+$color--1956:    rgb(156, 197, 215);
+$color--1959:    rgb(247, 243, 172);
+$color--1960:    rgb(198, 162, 245);
+$color--1962:    rgb(156, 215, 171);
+$color--1970:    rgb(247, 213, 167);
+$color--1980:    rgb(247, 156, 208);
+$color--bullet:  rgb(180, 180, 180);
+$color--list-bg: rgb(240, 240, 240);
+$color--text:    rgb(0, 0, 0);
+
+$color--main-bg:  rgb(227, 227, 227);
+
+li {
+   width: 60px;
+   height: 40px;
+   text-align: center;
+
+   a {
+      line-height: 40px;
+      font-size: 18px;
+      display: inline-block;
+      height: 40px;
+      vertical-align: bottom;
+      text-decoration: none;
+      color: $color--text;
+   }
+}
+
+header {
+   display: flex;
+
+   padding-bottom: (2 * $leading);
+
+   .fa-map {
+      width: $width--grid-column;
+      text-align: center;
+   }
+
+   font-size: (2.25 * $font-size--base);
+   font-weight: $regular;
+
+   h1 {
+      margin-left: $width--grid-gutter;
+      text-align: center;
+      width: (10 * $width--grid-unit) + $width--grid-column;
+   }
+}
+
+main {
+   display: flex;
+
+   div {
+      padding-top: (2.9 * $leading);
+      background-color: $color--main-bg;
+      width: (10 * $width--grid-unit) + $width--grid-column;
+
+      p {
+         padding-left: 80px;
+         font-weight: $light;
+         line-height: 26px;
+         width: (9 * $width--grid-unit);
+      }
+   }
+}

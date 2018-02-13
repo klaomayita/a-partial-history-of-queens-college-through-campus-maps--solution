@@ -1,0 +1,33 @@
+nav {
+   width: 80px;
+
+   li {
+      &:nth-child(1) {
+         background-color: $color--1940;
+      }
+
+      &:nth-child(2) {
+         background-color: $color--1956;
+      }
+
+      &:nth-child(3) {
+         background-color: $color--1959;
+      }
+
+      &:nth-child(4) {
+         background-color: $color--1960;
+      }
+
+      &:nth-child(5) {
+         background-color: $color--1962;
+      }
+
+      &:nth-child(6) {
+         background-color: $color--1970;
+      }
+
+      &:nth-child(7) {
+         background-color: $color--1980;
+      }
+   }
+}

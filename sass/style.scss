@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'fonts';
+@import 'base';
+@import 'header';
+@import 'nav';
+@import 'main';
+
+#container {
+   padding: {
+      left: 32px;
+      right: 32px;
+      top: (2 * $leading);
+      bottom: (2 * $leading);
+   }
+
+   width: (12 * $width--grid-unit);
+   margin: auto;
+}
