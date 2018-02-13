@@ -60,6 +60,7 @@ nav {
 }
 
 nav li {
+  position: relative;
   width: 60px;
   text-align: center;
 }
@@ -72,32 +73,115 @@ nav li a {
   font-size: 18px;
 }
 
+nav li a:hover::before {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
 nav li:nth-child(1) {
   background-color: #f5a3b0;
+}
+
+nav li:nth-child(1) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #f5a3b0;
 }
 
 nav li:nth-child(2) {
   background-color: #9cc5d7;
 }
 
+nav li:nth-child(2) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #9cc5d7;
+}
+
 nav li:nth-child(3) {
   background-color: #f7f3ac;
+}
+
+nav li:nth-child(3) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #f7f3ac;
 }
 
 nav li:nth-child(4) {
   background-color: #c6a2f5;
 }
 
+nav li:nth-child(4) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #c6a2f5;
+}
+
 nav li:nth-child(5) {
   background-color: #9cd7ab;
+}
+
+nav li:nth-child(5) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #9cd7ab;
 }
 
 nav li:nth-child(6) {
   background-color: #f7d5a7;
 }
 
+nav li:nth-child(6) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #f7d5a7;
+}
+
 nav li:nth-child(7) {
   background-color: #f79cd0;
+}
+
+nav li:nth-child(7) a:hover::before {
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left-color: #f79cd0;
 }
 
 main {
