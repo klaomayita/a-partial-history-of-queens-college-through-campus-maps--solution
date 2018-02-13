@@ -2,15 +2,15 @@ main {
    display: flex;
 
    div {
-      padding-top: (2.9 * $leading);
       background-color: $color-bg--main;
+      padding-top: (2.9 * $leading);
       width: (10 * $width--grid-unit) + $width--grid-column;
 
       p {
-         padding-left: 80px;
-         font-weight: $light;
-         line-height: 26px;
+         padding-left: $width--grid-unit;
          width: (9 * $width--grid-unit);
+         line-height: 26px;
+         font-weight: $light;
       }
    }
 }

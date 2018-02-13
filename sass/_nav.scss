@@ -1,19 +1,16 @@
 nav {
-   width: 80px;
+   width: $width--grid-unit;
 
    li {
-      width: 60px;
-      height: 40px;
+      width: $width--grid-column;
       text-align: center;
 
       a {
-         line-height: 40px;
-         font-size: 18px;
          display: inline-block;
-         height: 40px;
-         vertical-align: bottom;
          text-decoration: none;
+         line-height: (2.5 * $leading);
          color: $color--text;
+         font-size: $font-size--nav;
       }
 
       &:nth-child(1) {

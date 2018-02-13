@@ -1,23 +1,9 @@
+#container {
+   margin: auto;
+   padding: (2 * $leading) $offset--page;
+   width: (12 * $width--grid-unit);
+}
+
 body {
    font-family: 'IBM Plex Sans';
-}
-
-header {
-   h1 {
-      font-weight: 400;
-   }
-}
-
-nav {
-   ul {
-      li {
-            font-weight: 400;
-         }
-   }
-}
-
-main {
-   p {
-      font-weight: 200;
-   }
 }
