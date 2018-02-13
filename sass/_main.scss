@@ -1,0 +1,16 @@
+main {
+   display: flex;
+
+   div {
+      padding-top: (2.9 * $leading);
+      background-color: $color--main-bg;
+      width: (10 * $width--grid-unit) + $width--grid-column;
+
+      p {
+         padding-left: 80px;
+         font-weight: $light;
+         line-height: 26px;
+         width: (9 * $width--grid-unit);
+      }
+   }
+}
