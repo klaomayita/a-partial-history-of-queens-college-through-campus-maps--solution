@@ -60,23 +60,3 @@ li {
       color: $color--text;
    }
 }
-
-header {
-   display: flex;
-
-   padding-bottom: (2 * $leading);
-
-   .fa-map {
-      width: $width--grid-column;
-      text-align: center;
-   }
-
-   font-size: (2.25 * $font-size--base);
-   font-weight: $regular;
-
-   h1 {
-      margin-left: $width--grid-gutter;
-      text-align: center;
-      width: (10 * $width--grid-unit) + $width--grid-column;
-   }
-}
