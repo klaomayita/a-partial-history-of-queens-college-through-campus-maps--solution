@@ -3,7 +3,7 @@ main {
 
    div {
       padding-top: (2.9 * $leading);
-      background-color: $color--main-bg;
+      background-color: $color-bg--main;
       width: (10 * $width--grid-unit) + $width--grid-column;
 
       p {
