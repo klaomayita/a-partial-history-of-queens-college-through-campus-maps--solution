@@ -1,0 +1,73 @@
+///
+/// Render an arrow sans shaft, defined by a width, height, direction, and color.
+///
+/// @access public
+/// @param {Numeric} $width — Defines the width of the arrow, irrespective of
+///                           direction.
+/// @param {Numeric} $height — Defines the height of the arrow, also irrespective
+///                            of direction
+/// @param {String} $direction — Defines the direction the arrow points in. An arrow
+///                              can point “down” or to the “bottom”, and it can
+///                              point “up” or to the “top”.
+/// @param {String} $color — Any valid W3C color defines the color of the arrow.
+///
+/// @example
+/// div::before {
+///
+///    /* Render a black, 9×24, right-facing arrow */
+///
+///    @include render-shaftless-arrow(9px, 24px, "right", "black");
+/// }
+///
+@mixin render-shaftless-arrow($width, $height, $direction, $color) {
+   border: {
+      top:    $height solid transparent;
+      right:  ($width / 2) solid transparent;
+      bottom: $height solid transparent;
+      left:   ($width / 2) solid transparent;
+   }
+
+   width: 0;
+   height: 0;
+   content: '';
+
+   @if ('up' == $direction or 'top' == $direction) {
+      border-bottom-color: $color;
+   } @else {
+      @if ('down' == $direction or 'bottom' == $direction) {
+         border-top-color: $color;
+      } @else {
+         @if ('left' == $direction) {
+            border-right-color: $color;
+         } @else {
+            @if ('right' == $direction) {
+               border-left-color: $color;
+            } @else {
+               @error '`#{$direction}` is not a valid direction.';
+            }
+         }
+      }
+   }
+}
+
+// &.render-top-pointing-arrow {
+//    &::before {
+//       @include render-shaftless-arrow(40px, 20px, 'right', $color--1940);
+//
+//       position: absolute;
+//       top: 0;
+//       left: 100%;
+//       //top: -((2 * $height--arrow) - 1);
+//       //left: calc(50% - (#{$width--arrow} / 2));
+//    }
+// }
+
+//.current {
+//   &::before {
+//      @include render-shaftless-arrow(40px, 20px, 'right', $color-bg--main);
+//
+//      position: absolute;
+//      top: -((2 * $height--arrow) - 1);
+//      left: calc(50% - (#{$width--arrow} / 2));
+//   }
+//}
