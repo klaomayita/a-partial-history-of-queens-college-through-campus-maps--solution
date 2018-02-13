@@ -2,6 +2,20 @@ nav {
    width: 80px;
 
    li {
+      width: 60px;
+      height: 40px;
+      text-align: center;
+
+      a {
+         line-height: 40px;
+         font-size: 18px;
+         display: inline-block;
+         height: 40px;
+         vertical-align: bottom;
+         text-decoration: none;
+         color: $color--text;
+      }
+
       &:nth-child(1) {
          background-color: $color--1940;
       }

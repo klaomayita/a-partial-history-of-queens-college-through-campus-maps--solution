@@ -44,19 +44,3 @@ $color--list-bg: rgb(240, 240, 240);
 $color--text:    rgb(0, 0, 0);
 
 $color--main-bg:  rgb(227, 227, 227);
-
-li {
-   width: 60px;
-   height: 40px;
-   text-align: center;
-
-   a {
-      line-height: 40px;
-      font-size: 18px;
-      display: inline-block;
-      height: 40px;
-      vertical-align: bottom;
-      text-decoration: none;
-      color: $color--text;
-   }
-}
