@@ -28,7 +28,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1940);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1940);
                }
             }
          }
@@ -40,7 +40,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1956);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1956);
                }
             }
          }
@@ -52,7 +52,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1959);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1959);
                }
             }
          }
@@ -64,7 +64,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1960);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1960);
                }
             }
          }
@@ -76,7 +76,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1962);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1962);
                }
             }
          }
@@ -88,7 +88,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1970);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1970);
                }
             }
          }
@@ -100,7 +100,7 @@ nav {
          a {
             &:hover {
                &::before {
-                  @include render-shaftless-arrow(40px, $width--grid-gutter, 'right', $color--1980);
+                  @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', $color--1980);
                }
             }
          }
