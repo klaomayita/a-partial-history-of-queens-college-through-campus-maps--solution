@@ -20,27 +20,48 @@
 /// }
 ///
 @mixin render-shaftless-arrow($width, $height, $direction, $color) {
-   border: {
-      top:    $height solid transparent;
-      right:  ($width / 2) solid transparent;
-      bottom: $height solid transparent;
-      left:   ($width / 2) solid transparent;
-   }
-
    width: 0;
    height: 0;
    content: '';
 
    @if ('up' == $direction or 'top' == $direction) {
+      border: {
+         top:    $height solid transparent;
+         right:  ($width / 2) solid transparent;
+         bottom: $height solid transparent;
+         left:   ($width / 2) solid transparent;
+      }
+
       border-bottom-color: $color;
    } @else {
       @if ('down' == $direction or 'bottom' == $direction) {
+         border: {
+            top:    $height solid transparent;
+            right:  ($width / 2) solid transparent;
+            bottom: $height solid transparent;
+            left:   ($width / 2) solid transparent;
+         }
+
          border-top-color: $color;
       } @else {
          @if ('left' == $direction) {
+            border: {
+               top:    ($height / 2) solid transparent;
+               right:  $width solid transparent;
+               bottom: ($height / 2) solid transparent;
+               left:   $width solid transparent;
+            }
+
             border-right-color: $color;
          } @else {
             @if ('right' == $direction) {
+               border: {
+                  top:    ($height / 2) solid transparent;
+                  right:  $width solid transparent;
+                  bottom: ($height / 2) solid transparent;
+                  left:   $width solid transparent;
+               }
+
                border-left-color: $color;
             } @else {
                @error '`#{$direction}` is not a valid direction.';
