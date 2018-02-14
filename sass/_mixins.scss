@@ -49,25 +49,3 @@
       }
    }
 }
-
-// &.render-top-pointing-arrow {
-//    &::before {
-//       @include render-shaftless-arrow(40px, 20px, 'right', $color--1940);
-//
-//       position: absolute;
-//       top: 0;
-//       left: 100%;
-//       //top: -((2 * $height--arrow) - 1);
-//       //left: calc(50% - (#{$width--arrow} / 2));
-//    }
-// }
-
-//.current {
-//   &::before {
-//      @include render-shaftless-arrow(40px, 20px, 'right', $color-bg--main);
-//
-//      position: absolute;
-//      top: -((2 * $height--arrow) - 1);
-//      left: calc(50% - (#{$width--arrow} / 2));
-//   }
-//}
