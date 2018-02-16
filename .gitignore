@@ -9,7 +9,6 @@ node_modules/
 !package-lock.json
 !package.json
 
-!css/
 !fonts/
 !img/
 !sass/
