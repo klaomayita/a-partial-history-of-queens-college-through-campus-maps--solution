@@ -4,6 +4,10 @@ header {
    font-size: (2.25 * $font-size--base);
    font-weight: $regular;
 
+   a {
+      color: $color--text;
+   }
+
    .fa-map {
       width: $width--grid-column;
       text-align: center;
