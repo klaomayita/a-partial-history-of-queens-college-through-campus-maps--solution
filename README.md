@@ -1,14 +1,14 @@
 # The Queens College Campus Maps (1940 – 1980) Assignment
 
 ## TODO
-Add all pages to .gitignore. For example, 
+Add all pages to .gitignore. For example,
 
 ## Description
 
 ## CSS
 
 ## Assets
-
+Extract images at 1 and 2x. Update gitignore to accept map-of-year.jpg and map-of-year@2x.jpg
 ## Grid
 
 ## Before You Start
@@ -23,7 +23,7 @@ Prepare your project’s scaffold before working, spending some time understandi
 
 3. Use the reset CSS document.
 
-4. 
+4.
 
 ## Rules
 
@@ -36,12 +36,12 @@ Prepare your project’s scaffold before working, spending some time understandi
 
 ## Important Dates for Context
 
-1940 — 
-1956 — 
-1959 — The Guggenheim opens to the public 
-1960 — The Beatles are formed 
-1962 — JCR Licklider begins working at ARPA 
-1970 — 
+1940 —
+1956 —
+1959 — The Guggenheim opens to the public
+1960 — The Beatles are formed
+1962 — JCR Licklider begins working at ARPA
+1970 —
 1980 — Time Berners-Lee begins contract work at CERN
 
 ## Grading
