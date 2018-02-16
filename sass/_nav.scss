@@ -22,6 +22,74 @@ nav {
          }
       }
 
+      &.current {
+         a {
+            &::before {
+               @include render-shaftless-arrow(20px, 40px, 'right', transparent);
+
+               position: absolute;
+               top: 0;
+               left: 100%;
+            }
+         }
+
+         &:nth-child(1) {
+            a {
+               &::before {
+                  border-left-color: $color--1940;
+               }
+            }
+         }
+
+         &:nth-child(2) {
+            a {
+               &::before {
+                  border-left-color: $color--1956;
+               }
+            }
+         }
+
+         &:nth-child(3) {
+            a {
+               &::before {
+                  border-left-color: $color--1959;
+               }
+            }
+         }
+
+         &:nth-child(4) {
+            a {
+               &::before {
+                  border-left-color: $color--1960;
+               }
+            }
+         }
+
+         &:nth-child(5) {
+            a {
+               &::before {
+                  border-left-color: $color--1962;
+               }
+            }
+         }
+
+         &:nth-child(6) {
+            a {
+               &::before {
+                  border-left-color: $color--1970;
+               }
+            }
+         }
+
+         &:nth-child(7) {
+            a {
+               &::before {
+                  border-left-color: $color--1980;
+               }
+            }
+         }
+      }
+
       &:nth-child(1) {
          background-color: $color--1940;
 
