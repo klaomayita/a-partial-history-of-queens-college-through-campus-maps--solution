@@ -6,9 +6,10 @@ main {
    p {
       padding-left: $width--grid-unit;
       width: (9 * $width--grid-unit);
-      line-height: 26px;
+      line-height: (1.625 * $leading);
       font-weight: $light;
    }
+}
 
 .map-page {
    main {
