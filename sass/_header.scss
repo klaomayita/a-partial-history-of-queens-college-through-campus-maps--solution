@@ -1,6 +1,5 @@
 header {
    display: flex;
-   padding-bottom: (2 * $leading);
    font-size: (2.25 * $font-size--base);
    font-weight: $regular;
 
@@ -16,6 +15,7 @@ header {
 
    h1 {
       margin-left: $width--grid-gutter;
+      padding-top: (2.5 * $leading);
       width: (10 * $width--grid-unit) + $width--grid-column;
       text-align: center;
    }
