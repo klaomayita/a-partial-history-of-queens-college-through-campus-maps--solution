@@ -9,7 +9,8 @@ header {
    }
 
    a {
-      line-height: (7 * $leading);
+      padding-top: (2.375 * $leading);
+      display: block;
       color: $color--text;
    }
 
