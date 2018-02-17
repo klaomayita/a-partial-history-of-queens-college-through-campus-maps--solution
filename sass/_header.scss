@@ -19,3 +19,21 @@ header {
       text-align: center;
    }
 }
+
+.map-page {
+   header {
+      padding-bottom: 0;
+      height: (7 * $leading);
+
+      h1 {
+         margin: ($leading / 2) 0;
+         padding: (1.25 * $leading) 0 $leading;
+         font-size: (1.5 * $font-size--base);
+
+         b {
+            display: block;
+            margin: ($leading / 2) 0;
+         }
+      }
+   }
+}

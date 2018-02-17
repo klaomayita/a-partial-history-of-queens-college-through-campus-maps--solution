@@ -10,7 +10,8 @@ main {
       font-weight: $light;
    }
 
-   &.map-page {
+.map-page {
+   main {
       padding-top: 0;
    }
 }
