@@ -1,5 +1,9 @@
 header {
    display: flex;
+   padding: {
+      top: (2.5 * $leading);
+      bottom: (2.5 * $leading);
+   }
    font-size: (2.25 * $font-size--base);
    font-weight: $regular;
 
@@ -9,14 +13,12 @@ header {
    }
 
    a {
-      padding-top: (2.375 * $leading);
       display: block;
       color: $color--text;
    }
 
    h1 {
       margin-left: $width--grid-gutter;
-      padding-top: (2.5 * $leading);
       width: (10 * $width--grid-unit) + $width--grid-column;
       text-align: center;
    }
@@ -24,8 +26,16 @@ header {
 
 .map-page {
    header {
-      padding-bottom: 0;
+      padding: 0;
       height: (7 * $leading);
+
+      > div {
+         position: fixed;
+      }
+
+      a {
+         padding-top: (2.375 * $leading);
+      }
 
       h1 {
          margin: ($leading / 2) 0;

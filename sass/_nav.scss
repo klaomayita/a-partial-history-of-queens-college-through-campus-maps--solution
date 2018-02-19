@@ -176,44 +176,9 @@ nav {
    }
 }
 
-/// Every picture gets the same geometrical treatment, but the background color to
-/// each is different. Hence, the classes.
-picture {
-   display: block;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-
-   img {
-      padding-top: (5 * $leading);
-      padding-bottom:  (5 * $leading);
-   }
-
-   &.nineteen-forty {
-      background-color: $color--1940;
-   }
-
-   &.nineteen-fifty-six {
-      background-color: $color--1956;
-   }
-
-   &.nineteen-fifty-nine {
-      background-color: $color--1959;
-   }
-
-   &.nineteen-sixty {
-      background-color: $color--1960;
-   }
-
-   &.nineteen-sixty-two {
-      background-color: $color--1962;
-   }
-
-   &.nineteen-seventy {
-      background-color: $color--1970;
-   }
-
-   &.nineteen-eighty {
-      background-color: $color--1980;
+.map-page {
+   nav {
+      position: fixed;
+      top: 112px;
    }
 }
