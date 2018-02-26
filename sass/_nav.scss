@@ -9,7 +9,7 @@ nav {
       a {
          display: inline-block;
          text-decoration: none;
-         line-height: (2.5 * $leading);
+         line-height: $height--nav-item;
          color: $color--text;
          font-size: $font-size--nav;
 
@@ -25,7 +25,7 @@ nav {
       &.current {
          a {
             &::before {
-               @include render-shaftless-arrow(20px, 40px, 'right', transparent);
+               @include render-shaftless-arrow($width--grid-gutter, $height--nav-item, 'right', transparent);
 
                position: absolute;
                top: 0;
@@ -179,6 +179,6 @@ nav {
 .map-page {
    nav {
       position: fixed;
-      top: 112px;
+      top: (7 * $leading);
    }
 }
