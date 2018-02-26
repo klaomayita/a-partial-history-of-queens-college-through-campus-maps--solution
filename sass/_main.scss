@@ -81,5 +81,8 @@ picture {
    }
 }
 
+.legend {
+   &__item-container {
+      line-height: (1.25 * $leading);
    }
 }
