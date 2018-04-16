@@ -3,12 +3,6 @@
    font-weight: $extra-light;
 }
 
-.legend {
-   &__item-container {
-      line-height: (1.25 * $leading);
-   }
-}
-
 main {
    ul {
       width: (4 * $width--grid-unit);
