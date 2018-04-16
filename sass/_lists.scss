@@ -24,12 +24,7 @@ main {
          &:nth-child(2) {
             padding-left: $width--grid-column;
          }
-      }
-   }
 
-   li {
-      &::before {
-         font-weight: $bold;
       }
    }
 }
