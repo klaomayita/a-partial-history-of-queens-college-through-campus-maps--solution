@@ -9,25 +9,6 @@ main {
       line-height: (1.625 * $leading);
       font-weight: $light;
    }
-
-   ul {
-      background-color: $color-bg--list;
-      padding: {
-         top: (5 * $leading);
-         bottom: (5 * $leading);
-         left: $width--grid-unit;
-      }
-      counter-reset: listStyle;
-   }
-
-   li {
-      counter-increment: listStyle;
-
-      &::before {
-         font-weight: $bold;
-         content: counter(listStyle, upper-alpha);
-      }
-   }
 }
 
 /// Every picture gets the same geometrical treatment, but the background color to
@@ -70,19 +51,9 @@ picture {
    }
 }
 
-.bullet {
-   color: $color--bullet;
-}
-
 .map-page {
    main {
       margin-left: $width--grid-unit;
       padding-top: 0;
-   }
-}
-
-.legend {
-   &__item-container {
-      line-height: (1.25 * $leading);
    }
 }

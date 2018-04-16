@@ -1,0 +1,46 @@
+.bullet {
+   color: $color--bullet;
+   font-weight: $extra-light;
+}
+
+.legend {
+   &__item-container {
+      line-height: (1.25 * $leading);
+   }
+}
+
+main {
+   ul {
+      width: (4 * $width--grid-unit);
+
+      &.legend {
+
+         padding: {
+            top: (5 * $leading);
+            bottom: (5 * $leading);
+            left: $width--grid-unit;
+         }
+
+         ul {
+            margin-left: 10px;
+            line-height: 1.3;
+            font-weight: $extra-light;
+         }
+
+         &:nth-child(2) {
+            padding-left: $width--grid-column;
+         }
+      }
+   }
+
+   li {
+      &::before {
+         font-weight: $bold;
+      }
+   }
+}
+
+#legend {
+   display: flex;
+   background-color: $color-bg--list;
+}
