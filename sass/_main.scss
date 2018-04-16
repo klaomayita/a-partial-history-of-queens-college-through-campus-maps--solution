@@ -2,6 +2,7 @@ main {
    background-color: $color-bg--main;
    padding-top: (2.9 * $leading);
    width: (10 * $width--grid-unit) + $width--grid-column;
+   margin-bottom: (5 * $leading);
 
    p {
       padding-left: $width--grid-unit;

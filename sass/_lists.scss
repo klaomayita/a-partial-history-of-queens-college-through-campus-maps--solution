@@ -3,33 +3,32 @@
    font-weight: $extra-light;
 }
 
-main {
-   ul {
-      width: (4 * $width--grid-unit);
-
-      &.legend {
-
-         padding: {
-            top: (5 * $leading);
-            bottom: (5 * $leading);
-            left: $width--grid-unit;
-         }
-
-         ul {
-            margin-left: 10px;
-            line-height: 1.3;
-            font-weight: $extra-light;
-         }
-
-         &:nth-child(2) {
-            padding-left: $width--grid-column;
-         }
-
-      }
-   }
-}
-
 #legend {
    display: flex;
    background-color: $color-bg--list;
+   padding-bottom: (5 * $leading);
+   line-height: 1.3;
+
+   /// Both legends
+   > ul {
+      padding-top: (5 * $leading);
+      width: (4 * $width--grid-unit);
+
+      li {
+         ul {
+            margin-left: ($width--grid-gutter / 2);
+            font-weight: $extra-light;
+         }
+      }
+
+      /// The left legend
+      &:nth-child(1) {
+         padding-left: $width--grid-unit;
+      }
+
+      /// The right legend
+      &:nth-child(2) {
+         padding-left: $width--grid-column;
+      }
+   }
 }
