@@ -6,3 +6,11 @@
 @import 'nav';
 @import 'main';
 @import 'lists';
+
+sup {
+   position: relative;
+   top: -.5em;
+   vertical-align: baseline;
+   line-height: 0;
+   font-size: 75%;
+}
