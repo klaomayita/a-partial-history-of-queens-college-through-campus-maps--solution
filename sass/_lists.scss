@@ -18,6 +18,11 @@
          ul {
             margin-left: 12px;
             font-weight: $extra-light;
+
+            li {
+               text-indent: -$offset--page;
+               margin-left: $offset--page;
+            }
          }
       }
 
