@@ -20,8 +20,8 @@
             font-weight: $extra-light;
 
             li {
-               text-indent: -$offset--page;
                margin-left: $offset--page;
+               text-indent: -$offset--page;
             }
          }
       }
