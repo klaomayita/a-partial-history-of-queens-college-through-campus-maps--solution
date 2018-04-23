@@ -11,15 +11,7 @@ main {
    }
 }
 
-/// Every picture gets the same geometrical treatment, but the background color to
-/// each is different. Hence, the classes.
-picture {
-   display: block;
-   padding-bottom: (5 * $leading);
-   text-align: center;
 
-   img {
-      padding-top: (5 * $leading);
    }
 
    &.nineteen-forty {
