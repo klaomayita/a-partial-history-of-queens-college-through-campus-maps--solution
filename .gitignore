@@ -3,6 +3,7 @@
 node_modules/
 css/
 
+!css/reset.css
 !README.md
 !config.json
 !gulpfile.js
