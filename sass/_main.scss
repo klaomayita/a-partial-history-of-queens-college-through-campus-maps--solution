@@ -11,6 +11,13 @@ main {
    }
 }
 
+.map-page {
+   main {
+      margin-bottom: (5 * $leading);
+      margin-left: $width--grid-unit;
+      padding-top: 0;
+   }
+}
 
    }
 
@@ -41,12 +48,6 @@ main {
    &.nineteen-eighty {
       background-color: $color--1980;
    }
-}
 
-.map-page {
-   main {
-      margin-bottom: (5 * $leading);
-      margin-left: $width--grid-unit;
-      padding-top: 0;
    }
 }
