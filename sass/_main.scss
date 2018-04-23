@@ -19,6 +19,11 @@ main {
    }
 }
 
+#map-image {
+   margin: auto;
+   padding: {
+      top: (5 * $leading);
+      bottom: (5 * $leading);
    }
 
    &.nineteen-forty {
@@ -49,5 +54,9 @@ main {
       background-color: $color--1980;
    }
 
+   a {
+      display: block;
+      margin: auto;
+      width: $width--map-image;
    }
 }
